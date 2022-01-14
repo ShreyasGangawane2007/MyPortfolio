@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+ html {
+		margin:0;
+		padding:0;
+}
+header{
+		width: 100vw;
+		height: 80px;
+		position: scrool;
+		top: 0;
+		background-color: white;
+		border-bottom: 1px solid red;
+		z-index: 1;
+}
+nav{
+	height: 100%;
+	display: flex;
+	justify-content: space-evenly;
+	align-items: center;
+	overflow: hidden;
+}
+ .nav-link{
+		text-transform: uppercase;
+		color: orange;
+		font: 20px sans-serif;
+		padding: 100% 25px;
+}
+ .nav-link:hover{
+		background-color: red;
+		color: white;
+}
+ body{
+		font-family: Arial, Helvetica, sans-serif;
+		font-size: 13pt;
+		background-color: #efefef;
+		padding: 10px;
+		margin: 0;
+}
+ h1{
+		font-size: 15pt;
+		color: orange;
+		text-align: center;
+		padding: 18px 0 18px 0;
+		margin: 0 0 10px 0;
+}
+ h1 span{
+		border: 1px solid orangered;
+		padding: 10px;
+}
+p{
+		padding: 0;
+		margin: 0;
+}
+.img-circle{
+		border: 3px solid white;
+		border-radius: 50%;
+}
+.section{
+		background-color: #fff;
+		padding: 15px;
+		margin-bottom: 10px;
+		border-radius: 10px;
+}
+#header{
+		background-image: urn("https://uploads-ssl.webflow.com/5e4df85d58d02b574c094981/5e61b936452770f1cc437223_Render%20Engine%20Blur.jpg");
+		background-size: cover;
+}
+#header img{
+		display: block;
+		width: 80px;
+		height: 80px;
+		margin: auto;
+}
+#header p{
+		font-size: 25pt;
+		color: orange;
+		padding-top: 5px;
+		margin: 0;
+		font-weight: bold;
+		text-align: center;
+}
+.selected{
+		background-color: #f36f48;
+		font-weight: bold;
+		color: white;
+}
+.gallery{
+	display: flex;
+	flex-wrap: wrap;
+	/* Compensate for excess margin on outer gallery flex items */
+	margin: -1rem -1rem;
+}
+.gallery-item{
+	/* Minimum width of 24rem and grow to fit available space */
+	flex: 1 0 24rem;
+	/* Margin value should be half of grid-gap value as margins on flex items don't collapse */
+	margin: 1rem:
+	box-shadow: 0.3rem 0.4rem 0.4rem rgba(0, 0, 0, 0.4);
+	overflow: hidden;
+}
+
+.gallery-image{
+	display: block;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	transition: transform 400ms ease-out;
+}
+
+.gallery-image:hover{
+	transform: scale(1.15);
+}
+li{
+		margin-boottom: 15px;
+		font-weight: bold;
+}
+hr{
+		border: 0;
+		height: 1px;
+		background: #f36f48;
+}
+form{
+		text-align: center;
+		margin-top: 0;
+}
+.submit{
+		background-color: orange;
+		padding: 12px 45px;
+		border-radius: 5px;
+		color: #ffffff;
+		border: none;
+		outline: none;
+		margin: 0;
+		font-weight: bold;
+}
+.submit:hover{
+		background-color: black;
+}
+textarea{
+		height: 100px;
+}
+input, textarea{
+		margin-bottom: 10px;
+		font-size: 11pt;
+		padding; 15px 10px 10px;
+		background: 1px solid #cecece;
+		background-color: #efefef;
+		color: #787575;
+		border-radius: 5px;
+		width: 70%;
+		outline: none;
+}
+#contacts img{
+		height:50px;
+		widht:50px;
+		margin-left:7px;
+		margin-right:7px;
+}
+#contacts a{
+		text-decoration: none;
+}
+#contacts img:hover{
+		opacity: 0.8;
+}
+#contacts{
+		text-align: center;
+}
+.copyright{
+		font-size: 18px;
+		text-align: center;
+		padding-bottom: 10px;
+		color: black;
+}
+
+</style>
+<title>Portfolio</title>
+</head>
+<body>
+<header>
+	<nav id="navbar">
+	<a href="#" class="nav-link">About Me</a>
+	<a href="#work" class="nav-link">My Projects</a>
+	<a href="#skills" class="nav-link">My Skills</a>
+	<a href="#contact" class="nav-link">Contact</a>
+	</nav>
+	</header>
+<!-- header image start -->
+<div id="header" class="section">
+	<img alt="" class="img-circle" src="https://www.brillcool.com/pub/media/testimonial/u/s/user.png">
+	<!-- Change the srcurl and add your image here -->
+	<p>Shreyas Gangawane</p>
+	<!-- write the student name in the above P tag -->
+</div>
+<!-- header image end -->
+
+<!-- About Me session start -->
+<div class="section">
+	<h1 id=#><span>About Me</span></h1>
+	<p>
+	Hey! I'm Shreyas Gangawane. I live in Wakad, Pune. I am 15 years old. I live with my mom and dad. I love them a lot. I respect them.
+	I like swimming, cycling, playing games like football and cricket. My favourite player is Ronaldo.
+	I study in class 9th in SNBP International School. 
+	My class teacher is Deepa Mam. She is very much kind. I love my Teacher.
+	My favourite subjects are Music & Computers. I wish to be a Software Engineer.
+	I have many friends but my best friend is Atharva, he lives in my society and he is also in class 9.
+	</p>
+	<!-- fill the above paragrapg tag with information about you -->
+</div>
+<!-- About Me section end -->
+<!-- My projects section start -->
+<div class="section">
+	<h1 id=work><span>My Projects</span></h1/>
+	<div class="gallery">
+	
+	<div class="gallery-item">
+			<img class="gallery-image" src="https://media.gettyimages.com/photos/cristiano-ronaldo-of-portugal-and-real-madrid-receives-the-2014-fifa-picture-id461443908?k=20&m=461443908&s=612x612&w=0&h=HJgiY-guSQNd9oWuGiBfsnPh6r7kLGWjftTbixQysHI=">
+	</div>
+	
+	<div class="gallery-item">
+			<img class="gallery-image" src="https://media.gettyimages.com/photos/indias-cricket-team-captain-mahendra-singh-dhoni-poses-with-the-icc-picture-id111487207?k=20&m=111487207&s=612x612&w=0&h=QO0rbo2LoTd3SbKhcom-Hy3bXLer5IoswoAFdTDWdcc=">
+	</div>
+	
+	
+	<div class="gallery-item">
+			<img class="gallery-image" src="https://media.istockphoto.com/photos/meter-sports-pool-swimming-pool-underwater-background-picture-id1286864435?b=1&k=20&m=1286864435&s=170667a&w=0&h=fqVqfJTvQ2TcR7jxlOXkHl0IaB0hqz7b2MXY9EeJtZ8=">
+	</div>
+	
+	<div class="gallery-item">
+			<img class="gallery-image" src="https://images.pexels.com/photos/610945/pexels-photo-610945.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500">
+	</div>
+	
+	<div class="gallery-item">
+			<img class="gallery-image" src="https://media.istockphoto.com/photos/gamer-work-space-concept-top-view-a-gaming-gear-mouse-keyboard-in-picture-id1170073824?b=1&k=20&m=1170073824&s=170667a&w=0&h=E2W21WamGtyTwz03FlSwIaA24uYF3oLIVwZr0uAJCPY=">
+	</div>
+	
+	<div class="gallery-item">
+			<img class="gallery-image" src="https://images.unsplash.com/photo-1486334803289-1623f249dd1e?w=500&h=500&fit=crop" alt="man wearing a black jacket, white shirt, blue jeans, and brown boots, playing a white electric guitar while sitting on an amp">
+	</div>
+	
+</div>
+
+<!-- replace all the source of img tag with your own project images -->
+</div>
+<!-- My projects section end -->
+	<!-- My Skills section start -->
+	
+<div class="section">
+	<h1 id=skills><span>My Skills</span><h1/>
+	<ul>
+	
+	<li>Html <br />
+	<progress min="0" max="100" value="80"></progress>
+	</li>
+	<li>Css<br />
+	<progress min="0" max="100" value="70"></progress>
+	</li>
+	<li>C++ <br />
+	<progress min="0" max="100" value="70"></progress>
+	</li>
+	<li>C programming <br />
+	<progress min="0" max="100" value="70"></progress>
+	</li>
+	
+	
+	</ul>
+	<!-- replace the list with your oun skill set -->
+</div>
+
+<!-- My Skills section end -->
+<!-- Form section start -->
+<!-- Submit button will send the details to the mail id given in form action attribute -->
+<div class="section">
+	<h1 id=contact><span>Contact Me</span></h1>
+	<form action="mailto:8fshreyasgangawane@gmail.com" method="post" enctype="text/plain">
+	<input name="name" placeholder="Name" type="text" required /><br/>
+	<input name="email" placeholder="Email" type="email" required /><br/>
+	<textarea name="message" placeholder="Message" required></textarea>
+	<input type="submit" value="SEND" class="submit" />
+	</form>
+</div>
+<!-- Form section end -->
+	<!-- Contacts section start -->
+	
+<div class="section" id="contacts">
+	<h1><span>Follow Me</span></h1>
+	<div>
+	<a href="https://www.youtube.com/channel/UCK_67uSso1HOjmlQoPuBEEA">
+	<img src="https://www.freeiconspng.com/uploads/hd-youtube-logo-png-transparent-background-20.png">
+	</a>
+	<a href="https://in.pinterest.com/Shreyasproyt">
+	<img alt="Twitter" src="https://i.pinimg.com/originals/1b/76/01/1b7601e035a83c13c208b4ec905ee6d9.png" />
+	</a>
+	</div>
+</div>
+
+<!-- Contacts section end -->
+
+<div class="copyright">
+	&copy; 2020 A sincere web developer. All rights reserved.
+</div>
+
+</body>
+</html>
